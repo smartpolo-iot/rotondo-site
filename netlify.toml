@@ -1,17 +1,16 @@
-
 [build]
   command = "npm run build"
   publish = "dist"
 
 [[redirects]]
-  # This makes rotondo.netlify.app/menu show your second project (the menu)
+  # This makes landing-page.com/menu show the content from your other netlify site
   from = "/menu/*"
   to = "https://rotondo-menu.netlify.app/:splat"
   status = 200
   force = true
 
 [[redirects]]
-  # This ensures React Router / SPA links work correctly on your main site
+  # This ensures the landing page works correctly with direct URL entry
   from = "/*"
   to = "/index.html"
   status = 200
