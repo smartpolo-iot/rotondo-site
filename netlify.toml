@@ -4,7 +4,7 @@
   publish = "dist"
 
 [[redirects]]
-  # This makes your-landing.com/menu show the content from your menu site
+  # This makes your-landing.com/menu show the content from your separate menu site
   from = "/menu/*"
   to = "https://rotondo-menu.netlify.app/:splat"
   status = 200
